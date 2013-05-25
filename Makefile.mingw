@@ -1,0 +1,8 @@
+include Makefile
+
+CXX = i686-w64-mingw32-g++
+
+CXXFLAGS = -pipe -std=gnu++0x -s -Ofast -flto -funroll-loops
+LIBS = -pipe -std=gnu++0x -s -Ofast -flto -mms-bitfields -funroll-loops -static-libstdc++ -static-libgcc
+
+PROGRAM = wordfreq.exe
