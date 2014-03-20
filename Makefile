@@ -4,8 +4,8 @@ RM = rm
 CXXFLAGS = -pipe -std=gnu++0x -s -Ofast -flto -march=native -funroll-loops
 LIBS = -pipe -std=gnu++0x -s -Ofast -flto -march=native
 
-#CXXFLAGS = -pipe -std=gnu++0x -O2 -g
-#LIBS = -pipe -std=gnu++0x -O2 -g
+#CXXFLAGS = -pipe -std=gnu++0x -Od -g
+#LIBS = -pipe -std=gnu++0x -Od -g
 
 PROGRAM = wordfreq
 OBJECTS = main.o frequencycounter.o

@@ -5,6 +5,7 @@
 *.slo
 *.lo
 *.o
+wordfreq
 
 # Compiled Dynamic libraries
 *.so

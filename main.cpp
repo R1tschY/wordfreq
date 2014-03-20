@@ -58,10 +58,8 @@ int main(int argc, char** argv) {
   }
 
   if (output_filename == NULL) {
-    puts("Ausgabe ...");
-    //wordfreq.print(true);
+    wordfreq.print(true);
   } else {
-  printf("Ausgabe in Datei %s\n", output_filename);
     wordfreq.saveCSV(output_filename, true);
   }
 
