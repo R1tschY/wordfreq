@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include <unordered_map>
+#include <boost/unordered_map.hpp>
 
 class FrequencyCounter {
 public:
@@ -14,7 +14,7 @@ public:
   void saveCSV(const char *filename, bool sorted = false) const;
 
 private:
-  typedef std::unordered_map<std::string, int> Table;
+  typedef boost::unordered_map<std::string, int> Table;
   typedef std::vector<std::pair<std::string, int> > SortableTable;
   
   SortableTable sort() const;

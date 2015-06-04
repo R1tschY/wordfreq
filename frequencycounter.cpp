@@ -20,6 +20,7 @@ void FrequencyCounter::addWordsInFile(const char* filename) {
   std::vector<std::string> words_in_line;
 
   line.reserve(1024);
+  words_in_line.reserve(250);
   while (std::getline(fin, line)) {
     words_in_line.clear();
     boost::split(words_in_line, line,
